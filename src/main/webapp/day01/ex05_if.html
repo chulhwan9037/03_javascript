@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>조건문 if</title>
+<script type="text/javascript">
+	/*  
+		if(조건식) {
+			조건이 참일 때 실행할 문장;			
+		}
+	
+		if(조건식) {
+			조건이 참일 때 실행할 문장;			
+		}else{
+			조건이 거짓일 때 실행할 문장;
+		}
+		
+		if(조건식1) {
+			조건1이 참일 때 실행할 문장;			
+		}else if(조건식2){
+			조건1이 거짓이고 조건2가 참일 때 실행할 문장;
+		}else {
+			조건 1,2 모두 거짓일 때 실행할 문장;
+		}
+				
+	*/	
+	// prompt로 숫자를 받아서 받은 숫자 k1이 홀수 인지 짝수인지 확인하라.
+	//let k1 = prompt(`정수 입력하세요`);
+	/* let res = '';
+	if (k1 % 2 == 0) {
+		res = '짝수';
+	}else {
+		res = '홀수';
+	}
+	document.write(`<h2>res = ${res}<h2>`); */
+	let k1 = prompt(`인상액은?`);
+	let pay = 200;
+	res = '';
+	if (k1>=1000) {
+		res = '충성';
+	}else if (k1>=500) {
+		res = '그냥';
+	}else if (k1>=200) {
+		res = '닭집';
+	}else if (k1<=200) {
+		res = '꺼져';
+	}
+	document.write(`<h2>res = ${res}</h2>`);
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

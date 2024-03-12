@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>function2</title>
+<script type="text/javascript">
+	document.write(`<p>전~~~~~~~~</p>`);
+	/* msg1(); */ // 오류
+	document.write(`<hr>`); // 위 오류 때문에 안나옴
+
+</script>
+<script type="text/javascript">
+	// 호이스팅 : 선언한 내용을 맨 처음으로 올리는 특징 
+	msg1();
+	function msg1() {
+		document.write(`<p>hi~~~</p>`);
+	}
+	function msg1() {
+		document.write(`<p>hello~~</p>`);
+	}
+		document.write(`<hr>`);
+		/* msg2();	익명함수 호이스팅 안됨 오류 */
+
+</script>
+<script type="text/javascript">
+	msg1();
+		document.write(`<hr>`);
+	let msg2 = function() {
+		document.write(`<p>hi222222~~~</p>`);
+	}
+	msg2();
+</script>
+<script type="text/javascript">
+	function msg3() {
+		document.write(`<p>hello1111111~~</p>`);
+	}
+	// var 는 상관없지만 let는 syntex 오류 발생 msg3 아무것도 안나옴
+	/* let msg3 = function() {
+		document.write(`<p>hello222222222~~</p>`);
+	} */
+	msg3();
+</script>
+</head>
+<body>
+<script type="text/javascript">
+	msg1();
+		document.write(`<hr>`);
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>선택부모, 형제 선택</title>
+</head>
+<body>
+	<main >
+		<section>
+			<article>
+				<ul class="list">
+					<li class="item1">list1</li>
+					<li class="item2">list2</li>
+					<li class="item3">list3</li>
+					<li class="item4">list4</li>
+					<li class="item5">list5</li>
+				</ul>
+			</article>
+		</section>
+	</main>
+	<script type="text/javascript">
+		/* 선택한 부모요소 부터 나까지 : closest*/
+		const li = document.querySelector("li");
+		console.log(li.closest("article"));
+		
+		/* 형제요소 */
+		const item3 = document.querySelector(".item3");
+		console.log(item3.previousElementSibling);  // 이전 요소 하나
+		console.log(item3.nextElementSibling);      // 이후 요소 하나
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

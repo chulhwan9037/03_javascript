@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/ex15.css">
+<script defer src="../js/15sam.js"></script>
+</head>
+<body>
+	<div id="item">
+		<img alt="사진" src="../images/flower.jpg">
+		<button class="over" id="open" onclick="showDetail()">상세설명 보기</button>
+		<div id="desc" class="detail">
+			<h4>등심붓꽃</h4>
+			<p>등심붓꽃의 줄기는 편평하고 녹색이며 좁은 날개가 있다. 높이는 10∼20cm이다. 
+			잎은 줄 모양이고 길이 4~8cm 폭 2~3mm로 가장자리에 미세한 톱니가 있다. 
+			밑쪽에 많이 달리며 줄기잎은 밑쪽이 잎집으로 줄기를 싼다. 
+			5~6월에 청자색 또는 백자색 꽃이 피는데 지름 1.5cm이며 줄기 끝에 달린 2개의 포(苞) 사이에 2∼5개가 달린다.
+			</p>
+			<button id="close" onclick="hideDetail()">상세설명 닫기</button>
+		</div>
+	</div>
+	<div id="item2">	
+		<button id="btnPlus">plus</button>
+		<span id="res">0</span>
+		<button id="btnMinus">minus</button>
+	</div>
+</body>
+</html>

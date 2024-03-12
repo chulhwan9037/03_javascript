@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>퀴즈</title>
+	<style type="text/css">
+		ul{
+			list-style-type: none;
+		}
+		li{
+			font-size: 20px;
+			line-height: 35px;
+		}
+		
+	</style>
+</head>
+<body>
+		<h1>할 일 목록</h1>
+    	<ul>
+        	<li><span class="check">&#8730;</span> 할 일 1 </li>
+        	<li><span class="check">&#8730;</span> 할 일 2 </li>
+        	<li><span class="check">&#8730;</span> 할 일 3 </li>
+        	<li><span class="check">&#8730;</span> 할 일 4 </li>
+    	    <li><span class="check">&#8730;</span> 할 일 5 </li>
+	    </ul>
+	
+	
+	<script type="text/javascript">
+		let check = document.querySelectorAll(".check");
+		for (let k of check) {
+			k.addEventListener('click', (e) =>{
+				e.target.parentNode.style.color="#eee";	
+				e.target.parentNode.style.textDecoration="line-through";
+			});
+		}
+				
+	</script>
+	
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

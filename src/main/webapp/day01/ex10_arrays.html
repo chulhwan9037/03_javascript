@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>배열</title>
+<script type="text/javascript">
+
+	// 배열 : 크기를 지정하지 않아도 된다. 
+	//       자료형을 구분하지 않아 섞어 담을 수 있다.
+	//       보통은 별도의 배열 표시를 하지 않음.
+	//       변수에 담으면 별도의 배열 표시를 하지 않는다. 
+	
+	// 방법 1 
+	let arr = new Array();
+	arr[0] = 10;
+	arr[1] = true;
+	arr[2] = 'A';
+	arr[3] = '인재개발원';
+	arr[4] = 3.14;
+	console.log(arr);
+	
+	// 출력
+	for (let i = 0; i < arr.length; i++) {
+		document.write(`${arr[i]} &nbsp;`);
+	}
+		document.write(`<hr>`);
+	
+	// 배열은 보통 for .. in 문을 사용
+	for ( let k in arr) {
+		// k 는 값이 아니라 index 이다.
+		document.write(`${arr[k]} &nbsp;`);
+	}
+		document.write(`<hr>`);
+	
+	// 방법 2 
+	let arr2 = ['포도', 15, false, 'k', 89.8];
+	
+	for (let i = 0; i < arr2.length; i++) {
+		document.write(`${arr2[i]} &nbsp;`);
+	}
+		document.write(`<hr>`);
+	
+	for ( let k1 in arr2) {
+		// k 는 값이 아니라 index 이다.
+		document.write(`${arr2[k1]} &nbsp;`);
+	}
+		document.write(`<hr>`);
+	
+	// 방법 3(문자열을 배열로 할 수 있다.)
+	let myData = "java,jsp,html,js,spring";
+	let myArr = myData.split(',');
+	for ( var k in myArr) {
+		document.write(`${myArr[k]} &nbsp;`);
+	}
+	document.write(`<hr>`);
+	
+	// 배열을 문자열로 변경
+	// 배열.join('구분자');
+	arr2 = ['딸기', 15, false, 'k', 89.8];
+	let str = arr2.join();
+	document.write(str);
+	
+	document.write(`<hr>`);
+	
+	// 자바스크립트에서의 배열은 추가 삭제가 가능 하다.
+	let myArr2 = ['딸기', 15, false, 'k', 89.8];	
+	// 배열 끝에 추가
+	myArr2.push('jsp');
+	console.log(myArr2);
+	for ( var k in myArr2) {
+		document.write(`${myArr2[k]} &nbsp;`);
+	}
+	document.write(`<hr>`);
+	
+	// 배열 마지막 삭제
+	myArr2.pop();
+	console.log(myArr2);
+	for ( var k in myArr2) {
+		document.write(`${myArr2[k]} &nbsp;`);
+	}
+	document.write(`<hr>`);
+	
+	// 배열 처음에 추가 
+	myArr2.unshift('목요일');	
+	console.log(myArr2);
+	for ( var k in myArr2) {
+		document.write(`${myArr2[k]} &nbsp;`);
+	}
+	document.write(`<hr>`);
+	
+	// 배열 처음 삭제
+	myArr2.shift();
+	console.log(myArr2);
+	for ( var k in myArr2) {
+		document.write(`${myArr2[k]} &nbsp;`);
+	}
+	document.write(`<hr>`);
+	
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
